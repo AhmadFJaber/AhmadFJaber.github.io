@@ -26,6 +26,13 @@ ul, ol {
 		text-align:left;
 }
 
+ul.edulist{
+		list-style-type:square;
+}
+
+ul.hobbylist{
+		list-style-type:circle;
+}
 
 img {
 		display: block;
