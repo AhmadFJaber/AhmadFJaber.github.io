@@ -23,10 +23,10 @@ h3 {
 		margin-top:5px;
 		
 }	
-div { text-align: center; }
 ul, ol {
 		display:table;
 		margin: auto;
+		text
 }
 ul.edulist{
 		list-style-type:square;
@@ -50,5 +50,10 @@ img {
 a {
 		text-align:center;
 		display:block;
+}
+@media screen and (max-width: 500px){
+	body{
+		font-size:1.75vw;
+	}
 }
 	
