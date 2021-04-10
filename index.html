@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="styleSheet" href="MyStyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Ahmad Jaber</title>
+</head>
+<body>
+
+<h1 onclick="wlcmMsg()">Ahmad Farid Fayiz Jaber</h1>
+
+<button onclick="printPge()">Print Ahmad's Resume</button>
+<img src="usedimage.jpg" alt="My Personal Picture" title="My Picture">
+<hr>
+<h3>Summary</h3>
+<p title="My Summary">My name is Ahmad Jaber, married and blessed with one child. 
+I have graduated from Al Hussan Academy earning my secondary education with IGCSE certificate 
+of O-Levels and A-Levels. 
+I have attended The University of Toledo from May 2014 to May 2017 seeking a degree in the 
+Mechanical Engineering Technology major, unfortunately I did not graduate with 24 credits left 
+to fullfil the requirements to earn a bachelor degree. 
+I have enrolled to An-Najah National University in the Computer Science major in January 2020, 
+as I was not accepted to the Mechanical Engineering Program,
+however I have found that I do have great skills in learning programming languages as well 
+as personal interests in the field of computer science that I can excel in with some work.
+<br>
+I have work experince in heavy equipment rentals of mobile elevating work platforms, from 
+January 2011 to May 2014 and the year 2019.
+I was in charge of daily operations, prioritizing work, maintaining machines on daily basis, 
+spare parts ordering and stocking. On-Site breakdowns rectifying.
+ Acquiring special tools required by maintenance personnel to work more efficiently.
+ Designing a more effiecient work flow between management and maintenance department.
+ <br></p>
+ <a href="https://www.facebook.com/ahmad.jaber.3762584" target="_blank" title="Visit my facebook profile">
+<b>Facebook Profile!</b></a>
+<hr>
+
+<h3>Education List</h3>
+<div id="education">
+<ul class="edulist">
+	<li>Secondary Education Diploma Al-Hussan Academy 2006</li>
+	<li>International General Certificate of Secondary Education (IGCSE):</li>
+	</ul>
+	<ol class="igcse">
+		<li>Ordinary Level 2003</li>
+		<li>Advance Level 2006 </li>
+	</ol>
+</div>
+<hr>
+<div id="wrkSect" onmouseover="updatePge()" onmouseout="rtrnOrig()">
+<h3>Work List</h3>
+<ol class="worklist">
+	<li>Operations officer, Zoom Middle East Equipments Rental 2011-2014</li>
+	<li>Private tutor 2017-Current</li>
+</ol>
+</div>
+<hr>
+<h3>Hobbies List</h3>
+<ul class="hobbylist">
+	<li >Carpentry</li>
+	<li>Reading</li>
+	<li>Traveling</li>
+</ul>
+
+<script>
+ function wlcmMsg(){
+   window.alert("Welcome to Ahmad's site, please let me know if you have any questions.");
+ }
+ 
+ function updatePge(){
+	document.getElementById("education").style.color="green";
+	}
+ function rtrnOrig(){
+	document.getElementById("education").style.color="black";
+	}
+ function printPge(){
+	window.print();
+	}
+</script>
+</body>
+</html>
