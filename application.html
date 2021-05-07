@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<link rel="styleSheet" href="MyStyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship Application</title>
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Internship Application</h2>
+<p>Please fill out the form below and hit submit to be considered for the internship.</p>
+
+<form name="internshipForm" action="/action_page.php"  onsubmit="return validateForm()" method="post">
+<fieldset>
+<legend>Personalia:</legend>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" onkeyup="lNameField()"><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" disabled onkeyup="emailOpen()"><br>
+<label for="web">Personal Website:</label>
+<input type="url" id="web" name="web"><br>
+<label for="phone">Enter a phone number:</label>
+<input type="tel" id="phone" name="phone" placeholder="05********" pattern="[0]{1}[5]{1}[0-9]{8}"><br>
+<label for="email">Enter your email:</label>
+<input type="email" id="email" name="email" disabled onkeyup="userOpen()"><br>
+<label for="uname">Username:</label>
+<input type="text" id="uname" name="uname" disabled onkeyup="passOpen()"><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" disabled onkeyup="passField()"><br>
+</fieldset>
+<fieldset>
+<legend>Education:</legend>
+<label>Degree:</label>
+<input list="degree" name="degree">
+<datalist id="degree">
+<option value="Associate">
+<option value="Bacelor">
+<option value="Masters">
+<option value="Ph.D.">
+<option value="Other">
+</datalist><br>
+<label for="gradDay">When will you graduate:</label>
+<input type="date" id="gradDay" name="gradDay"><br>
+<label for="cv">Upload your CV and other documents:</label>
+<input type="file" id="cv" name="cv" multiple><br>
+</fieldset><br>
+<div style="text-align:center">
+<input type="submit" value="Submit">
+<input type="button" value="Save" onclick="save()">
+<input type="reset" value="Reset" onclick="resetFields()">
+</div>
+</form>
+<div style="text-align:center;">
+<br>
+<button onclick="document.location='index.html'"><b>Home</b></button>
+</div>
+<script src="myScript.js"></script>
+</body>
+</html>
