@@ -119,11 +119,11 @@ function resetFields(){
 }
 // to set datepicker
 var today = new Date();
-var prev = new Date();
+var yearAhead = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1; //January is 0!
 var yyyy = today.getFullYear();
-var lastYear = yyyy-1;
+var lastYear = yyyy+1;
  if(dd<10){
         dd='0'+dd
     } 
@@ -133,6 +133,6 @@ var lastYear = yyyy-1;
 
 
 today = yyyy+'-'+mm+'-'+dd;
-prev = lastYear+'-'+mm+'-'+dd;
-document.getElementById('gradDay').setAttribute("max", today);
-document.getElementById('gradDay').setAttribute("min", prev);
+yearAhead = lastYear+'-'+mm+'-'+dd;
+document.getElementById('gradDay').setAttribute("max", yearAhead);
+document.getElementById('gradDay').setAttribute("min", today);
